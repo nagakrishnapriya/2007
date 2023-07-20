@@ -1,0 +1,19 @@
+{
+  "name": "StartingAtPrice",
+  "dataType": "decimal",
+  "sourceColumn": "StartingAtPrice",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "85daee0a-965c-42d2-a635-9c32341f32ef",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

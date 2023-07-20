@@ -1,0 +1,16 @@
+{
+  "name": "CreatedBy",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "CreatedBy",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "6b5fd574-fc35-4c16-9c80-0c810a9defa1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

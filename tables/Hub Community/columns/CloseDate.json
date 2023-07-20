@@ -1,0 +1,19 @@
+{
+  "name": "CloseDate",
+  "dataType": "dateTime",
+  "sourceColumn": "CloseDate",
+  "formatString": "Long Date",
+  "sourceProviderType": "date",
+  "lineageTag": "9b41c7d3-c9e7-43f6-9b32-8806599f3553",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

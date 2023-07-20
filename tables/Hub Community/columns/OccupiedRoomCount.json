@@ -1,0 +1,15 @@
+{
+  "name": "OccupiedRoomCount",
+  "dataType": "int64",
+  "sourceColumn": "OccupiedRoomCount",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "20d82c18-8828-430b-89de-5e15f76f932e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

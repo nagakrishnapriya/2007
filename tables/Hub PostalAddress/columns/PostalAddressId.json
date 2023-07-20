@@ -1,0 +1,16 @@
+{
+  "name": "PostalAddressId",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "PostalAddressId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "6456aafb-65bd-4ea7-a68c-1dfe0e6a6fc5",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

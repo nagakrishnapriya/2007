@@ -1,0 +1,16 @@
+{
+  "name": "TransactionReport_City-87edbc30-0887-4dd4-963a-fec01629eaaf",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Table.NestedJoin(#\"Payments TransactionReport\", {\"CommunityName\"}, #\"Hub Community\", {\"CommunityName\"}, \"Hub Community\", JoinKind.LeftOuter),",
+      "    #\"Expanded Hub Community\" = Table.ExpandTableColumn(Source, \"Hub Community\", {\"CommunityName\", \"Longitude\", \"Latitude\", \"Hub.CommunityPostalAddress.Hub.PostalAddress.City\"}, {\"Hub Community.CommunityName\", \"Hub Community.Longitude\", \"Hub Community.Latitude\", \"Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City\"}),",
+      "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded Hub Community\",{\"TransactionId\", \"ResidentName\", \"Email\", \"Phone\", \"TransactionStatus\", \"TransactionAmount\", \"ReferenceNumber\", \"CommunityName\", \"TransactionDate\", \"Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City\"}),",
+      "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\", {\"TransactionId\"})",
+      "in",
+      "    #\"Removed Duplicates\""
+    ]
+  }
+}

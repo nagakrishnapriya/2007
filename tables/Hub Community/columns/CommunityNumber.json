@@ -1,0 +1,15 @@
+{
+  "name": "CommunityNumber",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "CommunityNumber",
+  "sourceProviderType": "nvarchar(50)",
+  "lineageTag": "33162188-9402-408b-96e7-d653b132cc54",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

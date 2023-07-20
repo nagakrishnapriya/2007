@@ -1,0 +1,14 @@
+{
+  "name": "Hub CommunityPostalAddress-aceb0612-ca5a-4e75-8740-8884335fe58f",
+  "mode": "directQuery",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Sql.Database(\"sql-gs-dev.database.windows.net\", \"Tenant_Glennis_Dev_Development_2023-05-17T15-00Z\"),",
+      "    Hub_CommunityPostalAddress = Source{[Schema=\"Hub\",Item=\"CommunityPostalAddress\"]}[Data]",
+      "in",
+      "    Hub_CommunityPostalAddress"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ModifiedBy",
+  "dataType": "int64",
+  "sourceColumn": "ModifiedBy",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "19306969-26a3-4fde-8a5f-3e60e3d32a88",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

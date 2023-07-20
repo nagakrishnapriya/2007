@@ -1,0 +1,14 @@
+{
+  "name": "CountryDivisionId",
+  "dataType": "string",
+  "sourceColumn": "CountryDivisionId",
+  "sourceProviderType": "char",
+  "lineageTag": "03be3f6a-cc54-47e7-97de-76ec55d29568",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

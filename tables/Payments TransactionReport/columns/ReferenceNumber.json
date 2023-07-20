@@ -1,0 +1,15 @@
+{
+  "name": "ReferenceNumber",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "ReferenceNumber",
+  "sourceProviderType": "nvarchar(40)",
+  "lineageTag": "cb11ff95-9274-4ce4-b347-090664948a08",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

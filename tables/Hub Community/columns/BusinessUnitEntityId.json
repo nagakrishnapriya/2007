@@ -1,0 +1,15 @@
+{
+  "name": "BusinessUnitEntityId",
+  "dataType": "int64",
+  "sourceColumn": "BusinessUnitEntityId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "1258fdc8-7b62-4206-a4fd-7164020b773a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

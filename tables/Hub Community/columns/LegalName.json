@@ -1,0 +1,14 @@
+{
+  "name": "LegalName",
+  "dataType": "string",
+  "sourceColumn": "LegalName",
+  "sourceProviderType": "nvarchar(200)",
+  "lineageTag": "411950dd-b2ac-480c-9e62-3fe06bc5fd04",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

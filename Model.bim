@@ -1,0 +1,2415 @@
+{
+  "name": "TransactionReport_Map",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "Hub CommunityPostalAddress",
+        "lineageTag": "86fea600-9695-4186-af41-0b357f77cbb9",
+        "columns": [
+          {
+            "name": "CommunityId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "CommunityId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "c544aedb-fac7-4bff-827a-736a29ec532a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PostalAddressId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "PostalAddressId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "d3e554e0-fe3c-4bb7-95e1-a1af8c3c76ae",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IsListingAddress",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "IsListingAddress",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "c1af7ee5-6019-4cfc-b240-8b32546df2b4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IsActive",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "IsActive",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "e914dcbe-5812-41b4-960b-eba9051ce0f5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Hub CommunityPostalAddress-aceb0612-ca5a-4e75-8740-8884335fe58f",
+            "mode": "directQuery",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"sql-gs-dev.database.windows.net\", \"Tenant_Glennis_Dev_Development_2023-05-17T15-00Z\"),",
+                "    Hub_CommunityPostalAddress = Source{[Schema=\"Hub\",Item=\"CommunityPostalAddress\"]}[Data]",
+                "in",
+                "    Hub_CommunityPostalAddress"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Hub Community",
+        "lineageTag": "25289471-b240-47e4-b2c1-8a83358539a2",
+        "columns": [
+          {
+            "name": "CommunityId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "CommunityId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "1a0240df-1e1a-47f6-96a0-a8f7295a1dd5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommunityNumber",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "CommunityNumber",
+            "sourceProviderType": "nvarchar(50)",
+            "lineageTag": "33162188-9402-408b-96e7-d653b132cc54",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommunityName",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "CommunityName",
+            "sourceProviderType": "nvarchar(200)",
+            "lineageTag": "6b7a0710-be61-422e-8596-b50a8bac1323",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ExternalName",
+            "dataType": "string",
+            "sourceColumn": "ExternalName",
+            "sourceProviderType": "nvarchar(200)",
+            "lineageTag": "2d350edc-eb02-46cd-8ca4-975d355a393d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LegalName",
+            "dataType": "string",
+            "sourceColumn": "LegalName",
+            "sourceProviderType": "nvarchar(200)",
+            "lineageTag": "411950dd-b2ac-480c-9e62-3fe06bc5fd04",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "BusinessUnitEntityId",
+            "dataType": "int64",
+            "sourceColumn": "BusinessUnitEntityId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "1258fdc8-7b62-4206-a4fd-7164020b773a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LanguageCultureId",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "LanguageCultureId",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "974541a3-b32f-46cc-94e4-3f7c519724d4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RoomMeasurement",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "RoomMeasurement",
+            "sourceProviderType": "nvarchar(100)",
+            "lineageTag": "d5992703-9ca1-451b-a4f5-c642babaa07e",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ImageName",
+            "dataType": "string",
+            "sourceColumn": "ImageName",
+            "sourceProviderType": "nvarchar(500)",
+            "lineageTag": "0900ebb3-feea-44b1-a31a-73fba7e36ec4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TimeZone",
+            "dataType": "string",
+            "sourceColumn": "TimeZone",
+            "sourceProviderType": "varchar(200)",
+            "lineageTag": "4d7664d9-c7f0-44b6-9ae5-5dadee7cc1f1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "OverviewId",
+            "dataType": "int64",
+            "sourceColumn": "OverviewId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "5e299d7b-bf6b-44e9-940f-9d69d4938632",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CountryId",
+            "dataType": "string",
+            "sourceColumn": "CountryId",
+            "sourceProviderType": "char",
+            "lineageTag": "95daacae-3e6d-4b44-a03b-021a9ea8fca8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CountryDivisionId",
+            "dataType": "string",
+            "sourceColumn": "CountryDivisionId",
+            "sourceProviderType": "char",
+            "lineageTag": "4bfe160d-ef80-495e-a68c-70bdf219143f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Longitude",
+            "dataType": "string",
+            "sourceColumn": "Longitude",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "5a74a9a3-ef10-40e1-b7c3-0f7409eb30c0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Latitude",
+            "dataType": "string",
+            "sourceColumn": "Latitude",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "f32ef4a6-408f-42a0-9a76-19104df2563f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ProfileImageId",
+            "dataType": "int64",
+            "sourceColumn": "ProfileImageId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "cd906593-d809-4a3e-9423-335e1c4911c3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommunityOwnerId",
+            "dataType": "int64",
+            "sourceColumn": "CommunityOwnerId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "a820d3ac-485b-4356-8435-444d9df1ac17",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AcquisitionDate",
+            "dataType": "dateTime",
+            "sourceColumn": "AcquisitionDate",
+            "formatString": "Long Date",
+            "sourceProviderType": "date",
+            "lineageTag": "4a7156d2-3b2e-4f4c-8117-e2c308a9e147",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          },
+          {
+            "name": "OpenDate",
+            "dataType": "dateTime",
+            "sourceColumn": "OpenDate",
+            "formatString": "Long Date",
+            "sourceProviderType": "date",
+            "lineageTag": "609d41f8-c4bd-4df4-b4cb-9d044bc7c4fb",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          },
+          {
+            "name": "CloseDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CloseDate",
+            "formatString": "Long Date",
+            "sourceProviderType": "date",
+            "lineageTag": "9b41c7d3-c9e7-43f6-9b32-8806599f3553",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          },
+          {
+            "name": "MarketingStartDate",
+            "dataType": "dateTime",
+            "sourceColumn": "MarketingStartDate",
+            "formatString": "Long Date",
+            "sourceProviderType": "date",
+            "lineageTag": "92cc1c59-bdbb-4aa2-b84d-9105ff0c7bf7",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          },
+          {
+            "name": "MarketingEndDate",
+            "dataType": "dateTime",
+            "sourceColumn": "MarketingEndDate",
+            "formatString": "Long Date",
+            "sourceProviderType": "date",
+            "lineageTag": "11ea43be-4134-46fb-9cef-757b9da16ee6",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          },
+          {
+            "name": "CommunityStatusId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "CommunityStatusId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "aa481e46-083f-43fa-bb6a-9c55af7cb2b3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StartingAtPrice",
+            "dataType": "decimal",
+            "sourceColumn": "StartingAtPrice",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "85daee0a-965c-42d2-a635-9c32341f32ef",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "IsFeatured",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "IsFeatured",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "ded316f6-ec87-4fe1-9c15-550430f109f8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommunityAssociationId",
+            "dataType": "int64",
+            "sourceColumn": "CommunityAssociationId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "938f3a0a-bc1d-4aec-bb77-9ca52341f7b7",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RoomTypeCount",
+            "dataType": "int64",
+            "sourceColumn": "RoomTypeCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "a3449f1c-99a1-4550-a555-57db4eb520ec",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PrimaryCareTypeCount",
+            "dataType": "int64",
+            "sourceColumn": "PrimaryCareTypeCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "64e32f25-95d8-4a5e-8c8f-2afd8fa5b21a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SecondaryCareTypeCount",
+            "dataType": "int64",
+            "sourceColumn": "SecondaryCareTypeCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "ca4ba00d-8791-49bb-8d4e-ebdb125a6bd8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AverageRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "AverageRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "441506a9-865a-4426-863d-6b9216088d27",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MinimumRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MinimumRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "30060e53-644b-4943-927b-d6313ec1c150",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MaximumRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MaximumRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "de18d0f3-bd62-4278-898c-66cc8488e282",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "AverageVacantRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "AverageVacantRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "c625f74c-7d08-4f96-b0a1-ffc4988c91de",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MinimumVacantRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MinimumVacantRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "57d9e5cc-4e27-4b7e-ac05-08aa1b225d20",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MaximumVacantRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MaximumVacantRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "fea24657-b822-4e0c-ae37-2609eb153887",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "AverageOccupiedRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "AverageOccupiedRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "766500ab-9907-4808-99b2-a9562f1479af",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MinimumOccupiedRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MinimumOccupiedRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "7e2cd11b-494b-43a8-9d50-8a0f6104312a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MaximumOccupiedRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MaximumOccupiedRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "e3747d61-58ff-4981-a43d-392dadcd0f4c",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "AverageReservedRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "AverageReservedRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "df706a3b-f5ea-4967-9899-a4ae3e58bce9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MinimumReservedRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MinimumReservedRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "cbc5f6c9-0d7d-4d73-9649-5a14be4d6620",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "MaximumReservedRoomRate",
+            "dataType": "decimal",
+            "sourceColumn": "MaximumReservedRoomRate",
+            "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+            "sourceProviderType": "smallmoney",
+            "lineageTag": "48c9954b-c0a9-4e71-8c5f-e42f5eeef9d8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ]
+          },
+          {
+            "name": "RoomCount",
+            "dataType": "int64",
+            "sourceColumn": "RoomCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "699c91be-1bcc-45ee-9884-6c90a7a4a691",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "OccupiedRoomCount",
+            "dataType": "int64",
+            "sourceColumn": "OccupiedRoomCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "20d82c18-8828-430b-89de-5e15f76f932e",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "VacantRoomCount",
+            "dataType": "int64",
+            "sourceColumn": "VacantRoomCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "fc7da47a-e15c-4f22-8c53-34dd01055af9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ReservedRoomCount",
+            "dataType": "int64",
+            "sourceColumn": "ReservedRoomCount",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "0fa5d40c-484b-452d-b057-0103805e65a5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RowStatusId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "RowStatusId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "c10eb103-17dd-4869-9aae-2645427f4ff9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CreatedDate",
+            "dataType": "dateTime",
+            "isNullable": false,
+            "sourceColumn": "CreatedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "33fc682a-89bc-4cb4-8b8c-67c8b4118b2c",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CreatedBy",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "CreatedBy",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "6b5fd574-fc35-4c16-9c80-0c810a9defa1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ModifiedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ModifiedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "913e9951-e260-48f1-ae58-f6033d54b8d6",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ModifiedBy",
+            "dataType": "int64",
+            "sourceColumn": "ModifiedBy",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "b64b7eed-b973-4798-b9bf-1b6b45ff95ad",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HasEmarEnabled",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "HasEmarEnabled",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "e35e4649-da3c-4f65-a46b-e24d50410b92",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Hub.CommunityPostalAddress.Hub.PostalAddress.City",
+            "dataType": "string",
+            "sourceColumn": "Hub.CommunityPostalAddress.Hub.PostalAddress.City",
+            "sourceProviderType": "varchar(100)",
+            "lineageTag": "be24ede1-afe7-4b9d-9341-423c01d00909",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Hub.CommunityPostalAddress.Hub.PostalAddress.Longitude",
+            "dataType": "string",
+            "sourceColumn": "Hub.CommunityPostalAddress.Hub.PostalAddress.Longitude",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "bc31499e-59ce-4441-a3b8-c10fc8d1ca4f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Hub.CommunityPostalAddress.Hub.PostalAddress.Latitude",
+            "dataType": "string",
+            "sourceColumn": "Hub.CommunityPostalAddress.Hub.PostalAddress.Latitude",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "c9ab798a-9f97-4c0b-ba23-c5712ca2565c",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Hub Community-12e761d8-6f8f-4c2b-bbf5-16c34a41c2bb",
+            "mode": "directQuery",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"sql-gs-dev.database.windows.net\", \"Tenant_Glennis_Dev_Development_2023-05-17T15-00Z\"),",
+                "    Hub_Community = Source{[Schema=\"Hub\",Item=\"Community\"]}[Data],",
+                "    #\"Expanded Hub.CommunityPostalAddress\" = Table.ExpandTableColumn(Hub_Community, \"Hub.CommunityPostalAddress\", {\"Hub.PostalAddress\"}, {\"Hub.CommunityPostalAddress.Hub.PostalAddress\"}),",
+                "    #\"Expanded Hub.CommunityPostalAddress.Hub.PostalAddress\" = Table.ExpandRecordColumn(#\"Expanded Hub.CommunityPostalAddress\", \"Hub.CommunityPostalAddress.Hub.PostalAddress\", {\"City\", \"Longitude\", \"Latitude\"}, {\"Hub.CommunityPostalAddress.Hub.PostalAddress.City\", \"Hub.CommunityPostalAddress.Hub.PostalAddress.Longitude\", \"Hub.CommunityPostalAddress.Hub.PostalAddress.Latitude\"})",
+                "in",
+                "    #\"Expanded Hub.CommunityPostalAddress.Hub.PostalAddress\""
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ]
+      },
+      {
+        "name": "Hub PostalAddress",
+        "lineageTag": "eae27d4d-f678-424b-a759-80aa3f560f17",
+        "columns": [
+          {
+            "name": "PostalAddressId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "PostalAddressId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "6456aafb-65bd-4ea7-a68c-1dfe0e6a6fc5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ExternalId",
+            "dataType": "string",
+            "sourceColumn": "ExternalId",
+            "sourceProviderType": "nvarchar(100)",
+            "lineageTag": "a9d9cc48-4f22-465e-9920-31f1c9265c29",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StreetAddress1",
+            "dataType": "string",
+            "sourceColumn": "StreetAddress1",
+            "sourceProviderType": "varchar(100)",
+            "lineageTag": "6c92c349-6eb6-4e1a-a684-51b0e266ee77",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StreetAddress2",
+            "dataType": "string",
+            "sourceColumn": "StreetAddress2",
+            "sourceProviderType": "varchar(100)",
+            "lineageTag": "907bb374-3ed3-4772-9402-180da97fd5c3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "City",
+            "sourceProviderType": "varchar(100)",
+            "lineageTag": "f9e4d125-1136-4536-8181-2c567846c494",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CountryDivisionId",
+            "dataType": "string",
+            "sourceColumn": "CountryDivisionId",
+            "sourceProviderType": "char",
+            "lineageTag": "03be3f6a-cc54-47e7-97de-76ec55d29568",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CountryId",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "CountryId",
+            "sourceProviderType": "char",
+            "lineageTag": "d049a06d-bb57-458a-bcec-bb4ee962bdfd",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PostalCode",
+            "dataType": "string",
+            "sourceColumn": "PostalCode",
+            "sourceProviderType": "varchar(20)",
+            "lineageTag": "c4a4ccdf-d3b7-4fe5-a293-69539946c3d8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PostalAddressTypeId",
+            "dataType": "int64",
+            "sourceColumn": "PostalAddressTypeId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "e3670a7e-1ada-4092-a7fa-9c5931d81bab",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "WorldLocation",
+            "dataType": "string",
+            "sourceColumn": "WorldLocation",
+            "sourceProviderType": "nvarchar(max)",
+            "lineageTag": "d02f654a-eb49-47fe-b508-145cd24a5c98",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Longitude",
+            "dataType": "string",
+            "sourceColumn": "Longitude",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "12b16ef4-66ff-4cd9-9693-bc616d29cae0",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Latitude",
+            "dataType": "string",
+            "sourceColumn": "Latitude",
+            "sourceProviderType": "varchar(15)",
+            "lineageTag": "9431b2a2-730f-4e77-93d6-e9cb488e2475",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HasBeenValidated",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "HasBeenValidated",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "f02ef4a2-5406-45c8-ae1c-7b08739786f7",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IsActive",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "IsActive",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "c6090ea3-3017-4e12-b88e-c3de2185ae10",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CreatedDate",
+            "dataType": "dateTime",
+            "isNullable": false,
+            "sourceColumn": "CreatedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "67077705-df25-4dae-b1ae-599f845ecafe",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CreatedBy",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "CreatedBy",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "42eaea3c-23c4-4e98-b326-82e283d41d92",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ModifiedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ModifiedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "6e8a5cee-9341-42e7-80f8-5e8bf36d9df9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ModifiedBy",
+            "dataType": "int64",
+            "sourceColumn": "ModifiedBy",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "19306969-26a3-4fde-8a5f-3e60e3d32a88",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Hub PostalAddress-9295a999-32f6-4643-a1f7-9947540c7544",
+            "mode": "directQuery",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"sql-gs-dev.database.windows.net\", \"Tenant_Glennis_Dev_Development_2023-05-17T15-00Z\"),",
+                "    Hub_PostalAddress = Source{[Schema=\"Hub\",Item=\"PostalAddress\"]}[Data]",
+                "in",
+                "    Hub_PostalAddress"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Payments TransactionReport",
+        "lineageTag": "da34b574-fe8f-43d4-8aa9-e758889415eb",
+        "columns": [
+          {
+            "name": "TransactionReportId",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "TransactionReportId",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "15f57cef-129e-4688-92fe-c8c0c11994f3",
+            "summarizeBy": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionId",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "TransactionId",
+            "sourceProviderType": "nvarchar(100)",
+            "lineageTag": "4aaef9f7-5265-4881-b46e-f8f239b266b8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ResidentName",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "ResidentName",
+            "sourceProviderType": "nvarchar(200)",
+            "lineageTag": "8372d930-270c-46b0-853f-3677ea3628f9",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Email",
+            "dataType": "string",
+            "sourceColumn": "Email",
+            "sourceProviderType": "nvarchar(200)",
+            "lineageTag": "695a73fc-ecef-44b0-8ddb-b0e13ac5b7a3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Phone",
+            "dataType": "string",
+            "sourceColumn": "Phone",
+            "sourceProviderType": "nvarchar(30)",
+            "lineageTag": "b48ac77d-773e-4a41-8305-d8cd3385bfc2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionStatus",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "TransactionStatus",
+            "sourceProviderType": "nvarchar(40)",
+            "lineageTag": "f89c8ef6-c13f-4a3a-883a-2185f6f8cc61",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionAmount",
+            "dataType": "decimal",
+            "isNullable": false,
+            "sourceColumn": "TransactionAmount",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "sourceProviderType": "money",
+            "lineageTag": "b7b8f955-5d7b-4f3f-8f5d-3f9a5f0bf0bb",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ]
+          },
+          {
+            "name": "ReferenceNumber",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "ReferenceNumber",
+            "sourceProviderType": "nvarchar(40)",
+            "lineageTag": "cb11ff95-9274-4ce4-b347-090664948a08",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommunityName",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "CommunityName",
+            "sourceProviderType": "nvarchar(100)",
+            "lineageTag": "aa8bfd45-dfd8-474d-9f28-4c629df88aec",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TenantId",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "TenantId",
+            "sourceProviderType": "nvarchar(100)",
+            "lineageTag": "7f23c380-17bb-45e2-a79a-15b63bc8b181",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IsActive",
+            "dataType": "boolean",
+            "isNullable": false,
+            "sourceColumn": "IsActive",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "6a200177-50bb-4feb-966b-0e16944952cd",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionDate",
+            "dataType": "dateTime",
+            "isNullable": false,
+            "sourceColumn": "TransactionDate",
+            "formatString": "Long Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "eda7f54b-186a-49b0-9bd1-d155e33e5e29",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Payments TransactionReport-6b65199e-43d1-47d8-bdd9-255d33dd71cd",
+            "mode": "directQuery",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"sql-gs-dev.database.windows.net\", \"Tenant_Glennis_Dev_Development_2023-05-17T15-00Z\"),",
+                "    Payments_TransactionReport = Source{[Schema=\"Payments\",Item=\"TransactionReport\"]}[Data]",
+                "in",
+                "    Payments_TransactionReport"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "TransactionReport_City",
+        "lineageTag": "6c089854-26f6-4214-a463-18fc56e7d1e1",
+        "columns": [
+          {
+            "name": "TransactionId",
+            "dataType": "string",
+            "sourceColumn": "TransactionId",
+            "lineageTag": "b5929baf-73af-4ed6-8c03-d88bd8999729",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ResidentName",
+            "dataType": "string",
+            "sourceColumn": "ResidentName",
+            "lineageTag": "b52b24a7-bdb0-4b81-9cdd-665168e62a38",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Email",
+            "dataType": "string",
+            "sourceColumn": "Email",
+            "lineageTag": "3674de2d-f97b-4d88-9eb4-350dbf0a07cf",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Phone",
+            "dataType": "string",
+            "sourceColumn": "Phone",
+            "lineageTag": "7a50ba4b-9b52-44dc-a626-454e6d2972f8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionStatus",
+            "dataType": "string",
+            "sourceColumn": "TransactionStatus",
+            "lineageTag": "f8cedfdd-1148-4461-a805-8f875daf06aa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionAmount",
+            "dataType": "decimal",
+            "sourceColumn": "TransactionAmount",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "lineageTag": "81dc4175-21f8-4c89-9fde-b89b174ff45e",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              },
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ]
+          },
+          {
+            "name": "ReferenceNumber",
+            "dataType": "string",
+            "sourceColumn": "ReferenceNumber",
+            "lineageTag": "7d78d833-0fe0-49d2-9459-9e94ab9b37a2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CommunityName",
+            "dataType": "string",
+            "sourceColumn": "CommunityName",
+            "lineageTag": "bbe82547-d070-4630-898b-e5fcbae6a14f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionDate",
+            "dataType": "dateTime",
+            "sourceColumn": "TransactionDate",
+            "formatString": "Long Date",
+            "lineageTag": "b258c687-6201-46c3-b83a-000bd6ad92dc",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "relationship": "673d9ef1-6127-4f5f-9130-26e257ecdda2",
+                "defaultHierarchy": {
+                  "table": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d",
+                  "hierarchy": "Date Hierarchy"
+                },
+                "isDefault": true
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City",
+            "dataType": "string",
+            "sourceColumn": "Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City",
+            "lineageTag": "2965e105-e221-4d8b-a4e8-11dd0421b354",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "TransactionReport_City-87edbc30-0887-4dd4-963a-fec01629eaaf",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Table.NestedJoin(#\"Payments TransactionReport\", {\"CommunityName\"}, #\"Hub Community\", {\"CommunityName\"}, \"Hub Community\", JoinKind.LeftOuter),",
+                "    #\"Expanded Hub Community\" = Table.ExpandTableColumn(Source, \"Hub Community\", {\"CommunityName\", \"Longitude\", \"Latitude\", \"Hub.CommunityPostalAddress.Hub.PostalAddress.City\"}, {\"Hub Community.CommunityName\", \"Hub Community.Longitude\", \"Hub Community.Latitude\", \"Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City\"}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded Hub Community\",{\"TransactionId\", \"ResidentName\", \"Email\", \"Phone\", \"TransactionStatus\", \"TransactionAmount\", \"ReferenceNumber\", \"CommunityName\", \"TransactionDate\", \"Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\", {\"TransactionId\"})",
+                "in",
+                "    #\"Removed Duplicates\""
+              ]
+            }
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_67db3ff1-cbc7-412c-96fc-e5d4bbfa92cf",
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "2d70b85a-dc53-44ef-a70b-44d64c102429",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "lineageTag": "07113252-1308-4460-953a-7fba05487f00",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Year",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "lineageTag": "151c4a5b-f376-4378-b1a9-05bbc48e8067",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MonthNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "lineageTag": "8d00358c-348a-4562-ac18-53489f399670",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Month",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "MonthNo",
+            "lineageTag": "1f052872-7678-4187-a5fc-493d761dd654",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "QuarterNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "lineageTag": "c27c5b9f-4acb-405e-afff-a4efcd02d628",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Quarter",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "sortByColumn": "QuarterNo",
+            "lineageTag": "efca15d2-4da4-419b-8777-143abc8e97d5",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Day",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "lineageTag": "3f8600d3-128b-4b25-9c07-bc018a9c5255",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DateTableTemplate_67db3ff1-cbc7-412c-96fc-e5d4bbfa92cf-1cb795f5-b39d-483e-8973-41919a29ead8",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "lineageTag": "f948b63b-e23f-4bb2-8f69-491da3dd2b13",
+            "levels": [
+              {
+                "name": "Year",
+                "ordinal": 0,
+                "column": "Year",
+                "lineageTag": "3f3058ce-3131-46e4-80e4-4685a5b5d377"
+              },
+              {
+                "name": "Quarter",
+                "ordinal": 1,
+                "column": "Quarter",
+                "lineageTag": "e3094a67-5945-47ad-af31-f4ace400b6be"
+              },
+              {
+                "name": "Month",
+                "ordinal": 2,
+                "column": "Month",
+                "lineageTag": "be21a8ce-2f67-4ec1-b825-2998cf39cb85"
+              },
+              {
+                "name": "Day",
+                "ordinal": 3,
+                "column": "Day",
+                "lineageTag": "763b10d6-3d0f-46ca-9c54-5b9b9b245940"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d",
+        "isHidden": true,
+        "showAsVariationsOnly": true,
+        "lineageTag": "6d38d505-e0c5-4e37-a525-d0c459158aaf",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "lineageTag": "d21e0fe2-eea7-4af9-b6c1-263b06ad4119",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Year",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "lineageTag": "828249c9-2ff2-405d-8496-5cda6482fa1d",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MonthNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "lineageTag": "cb2d8615-fc9e-4a3d-9c31-51188f93edd7",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Month",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "MonthNo",
+            "lineageTag": "fc5a0e64-dfa3-4dda-81bb-74469bc7fa2f",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "QuarterNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "lineageTag": "beca0937-1b79-4d8f-a37c-88c273f0e143",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Quarter",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "sortByColumn": "QuarterNo",
+            "lineageTag": "1daaef93-92f1-4d49-b8d2-ad05470f1c26",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Day",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "lineageTag": "9d74d9f7-04e3-413d-a3f1-abd18c89f639",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d-ed7181b3-094e-4a8a-a8e0-260ea0b65c94",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(Year(MIN('TransactionReport_City'[TransactionDate])), 1, 1), Date(Year(MAX('TransactionReport_City'[TransactionDate])), 12, 31))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "lineageTag": "86af82df-655f-4f12-b188-9dbb7a4201a0",
+            "levels": [
+              {
+                "name": "Year",
+                "ordinal": 0,
+                "column": "Year",
+                "lineageTag": "d37886cc-166f-4144-81dc-54f31f54d948"
+              },
+              {
+                "name": "Quarter",
+                "ordinal": 1,
+                "column": "Quarter",
+                "lineageTag": "e1fd7aff-638c-4f93-ad6f-b6971744410c"
+              },
+              {
+                "name": "Month",
+                "ordinal": 2,
+                "column": "Month",
+                "lineageTag": "9e07d576-f504-43be-a85f-a9fabeaac13b"
+              },
+              {
+                "name": "Day",
+                "ordinal": 3,
+                "column": "Day",
+                "lineageTag": "16ffb51d-2eec-47c5-8c0a-c3a4a2615a66"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "4a1a17fa-1c61-4d03-89fc-161eb3faea6b",
+        "fromTable": "Hub CommunityPostalAddress",
+        "fromColumn": "CommunityId",
+        "toTable": "Hub Community",
+        "toColumn": "CommunityId",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ]
+      },
+      {
+        "name": "8d95af50-c2ea-4261-b8fd-9a1f61ecc4ee",
+        "fromTable": "Hub CommunityPostalAddress",
+        "fromColumn": "PostalAddressId",
+        "toTable": "Hub PostalAddress",
+        "toColumn": "PostalAddressId",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ]
+      },
+      {
+        "name": "673d9ef1-6127-4f5f-9130-26e257ecdda2",
+        "fromTable": "TransactionReport_City",
+        "fromColumn": "TransactionDate",
+        "toTable": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "2.0.0",
+            "Language": "en-US",
+            "DynamicImprovement": "HighConfidence",
+            "Entities": {
+              "payments_transactionreport.residentname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Payments TransactionReport",
+                    "ConceptualProperty": "ResidentName"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Name": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "payments_transactionreport.communityname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Payments TransactionReport",
+                    "ConceptualProperty": "CommunityName"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Community Name": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "payments_transactionreport.transactionid": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Payments TransactionReport",
+                    "ConceptualProperty": "TransactionId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Transaction Id": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "payments_transactionreport.transactionamount": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Payments TransactionReport",
+                    "ConceptualProperty": "TransactionAmount"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Transaction Amount": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "payments_transactionreport.transactionstatus": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Payments TransactionReport",
+                    "ConceptualProperty": "TransactionStatus"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Transaction Status": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "payments_transactionreport.referencenumber": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Payments TransactionReport",
+                    "ConceptualProperty": "ReferenceNumber"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Reference Number": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "transactionreport_city.hub_community_hub_communitypostaladdress_hub_postaladdress_city": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TransactionReport_City",
+                    "ConceptualProperty": "Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "City": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "transactionreport_city.communityname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TransactionReport_City",
+                    "ConceptualProperty": "CommunityName"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Community Name": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "transactionreport_city.transactionid": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "TransactionReport_City",
+                    "ConceptualProperty": "TransactionId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Transaction Id": {
+                      "State": "Suggested",
+                      "Source": {
+                        "Type": "External",
+                        "Agent": "PowerBI.VisualColumnRename"
+                      },
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Hub CommunityPostalAddress\",\"Hub Community\",\"Hub PostalAddress\",\"Payments TransactionReport\",\"TransactionReport_City\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.118.828.0 (23.06)"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Perspectives\",\"Relationships\",\"Roles\",\"Shared Expressions\",\"Tables\",\"Tables/Calculation Items\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Translations\"]}"
+      }
+    ]
+  }
+}

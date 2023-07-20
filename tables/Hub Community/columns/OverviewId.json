@@ -1,0 +1,15 @@
+{
+  "name": "OverviewId",
+  "dataType": "int64",
+  "sourceColumn": "OverviewId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "5e299d7b-bf6b-44e9-940f-9d69d4938632",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

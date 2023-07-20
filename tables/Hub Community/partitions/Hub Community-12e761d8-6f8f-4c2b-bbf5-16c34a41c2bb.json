@@ -1,0 +1,16 @@
+{
+  "name": "Hub Community-12e761d8-6f8f-4c2b-bbf5-16c34a41c2bb",
+  "mode": "directQuery",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Sql.Database(\"sql-gs-dev.database.windows.net\", \"Tenant_Glennis_Dev_Development_2023-05-17T15-00Z\"),",
+      "    Hub_Community = Source{[Schema=\"Hub\",Item=\"Community\"]}[Data],",
+      "    #\"Expanded Hub.CommunityPostalAddress\" = Table.ExpandTableColumn(Hub_Community, \"Hub.CommunityPostalAddress\", {\"Hub.PostalAddress\"}, {\"Hub.CommunityPostalAddress.Hub.PostalAddress\"}),",
+      "    #\"Expanded Hub.CommunityPostalAddress.Hub.PostalAddress\" = Table.ExpandRecordColumn(#\"Expanded Hub.CommunityPostalAddress\", \"Hub.CommunityPostalAddress.Hub.PostalAddress\", {\"City\", \"Longitude\", \"Latitude\"}, {\"Hub.CommunityPostalAddress.Hub.PostalAddress.City\", \"Hub.CommunityPostalAddress.Hub.PostalAddress.Longitude\", \"Hub.CommunityPostalAddress.Hub.PostalAddress.Latitude\"})",
+      "in",
+      "    #\"Expanded Hub.CommunityPostalAddress.Hub.PostalAddress\""
+    ]
+  }
+}

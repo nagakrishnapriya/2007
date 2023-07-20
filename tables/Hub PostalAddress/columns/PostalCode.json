@@ -1,0 +1,14 @@
+{
+  "name": "PostalCode",
+  "dataType": "string",
+  "sourceColumn": "PostalCode",
+  "sourceProviderType": "varchar(20)",
+  "lineageTag": "c4a4ccdf-d3b7-4fe5-a293-69539946c3d8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

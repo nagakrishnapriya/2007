@@ -1,0 +1,16 @@
+{
+  "name": "IsActive",
+  "dataType": "boolean",
+  "isNullable": false,
+  "sourceColumn": "IsActive",
+  "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+  "sourceProviderType": "bit",
+  "lineageTag": "c6090ea3-3017-4e12-b88e-c3de2185ae10",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

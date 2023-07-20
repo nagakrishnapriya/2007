@@ -1,0 +1,16 @@
+{
+  "name": "CommunityId",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "CommunityId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "c544aedb-fac7-4bff-827a-736a29ec532a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

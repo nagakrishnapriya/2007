@@ -1,0 +1,14 @@
+{
+  "name": "ExternalName",
+  "dataType": "string",
+  "sourceColumn": "ExternalName",
+  "sourceProviderType": "nvarchar(200)",
+  "lineageTag": "2d350edc-eb02-46cd-8ca4-975d355a393d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

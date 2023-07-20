@@ -1,0 +1,15 @@
+{
+  "name": "VacantRoomCount",
+  "dataType": "int64",
+  "sourceColumn": "VacantRoomCount",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "fc7da47a-e15c-4f22-8c53-34dd01055af9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

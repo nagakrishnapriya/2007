@@ -1,0 +1,15 @@
+{
+  "name": "TenantId",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "TenantId",
+  "sourceProviderType": "nvarchar(100)",
+  "lineageTag": "7f23c380-17bb-45e2-a79a-15b63bc8b181",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

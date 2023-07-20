@@ -1,0 +1,15 @@
+{
+  "name": "TransactionStatus",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "TransactionStatus",
+  "sourceProviderType": "nvarchar(40)",
+  "lineageTag": "f89c8ef6-c13f-4a3a-883a-2185f6f8cc61",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

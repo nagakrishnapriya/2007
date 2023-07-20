@@ -1,0 +1,10 @@
+{
+  "name": "Hub CommunityPostalAddress",
+  "lineageTag": "86fea600-9695-4186-af41-0b357f77cbb9",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Payments TransactionReport",
+  "lineageTag": "da34b574-fe8f-43d4-8aa9-e758889415eb",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

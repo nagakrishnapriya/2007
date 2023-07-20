@@ -1,0 +1,15 @@
+{
+  "name": "RoomTypeCount",
+  "dataType": "int64",
+  "sourceColumn": "RoomTypeCount",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "a3449f1c-99a1-4550-a555-57db4eb520ec",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

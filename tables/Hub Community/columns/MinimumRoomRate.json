@@ -1,0 +1,19 @@
+{
+  "name": "MinimumRoomRate",
+  "dataType": "decimal",
+  "sourceColumn": "MinimumRoomRate",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "30060e53-644b-4943-927b-d6313ec1c150",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

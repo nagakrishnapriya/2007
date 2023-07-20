@@ -1,0 +1,26 @@
+{
+  "name": "TransactionAmount",
+  "dataType": "decimal",
+  "sourceColumn": "TransactionAmount",
+  "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+  "lineageTag": "81dc4175-21f8-4c89-9fde-b89b174ff45e",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "DataType"
+    },
+    {
+      "property": "FormatString"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-US\"}"
+    }
+  ]
+}

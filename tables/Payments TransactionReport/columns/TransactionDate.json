@@ -1,0 +1,21 @@
+{
+  "name": "TransactionDate",
+  "dataType": "dateTime",
+  "isNullable": false,
+  "sourceColumn": "TransactionDate",
+  "formatString": "Long Date",
+  "sourceProviderType": "datetime2",
+  "lineageTag": "eda7f54b-186a-49b0-9bd1-d155e33e5e29",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "DataType"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

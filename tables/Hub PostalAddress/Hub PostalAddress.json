@@ -1,0 +1,10 @@
+{
+  "name": "Hub PostalAddress",
+  "lineageTag": "eae27d4d-f678-424b-a759-80aa3f560f17",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City",
+  "dataType": "string",
+  "sourceColumn": "Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City",
+  "lineageTag": "2965e105-e221-4d8b-a4e8-11dd0421b354",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

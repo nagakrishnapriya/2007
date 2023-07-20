@@ -1,0 +1,15 @@
+{
+  "name": "LanguageCultureId",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "LanguageCultureId",
+  "sourceProviderType": "varchar(15)",
+  "lineageTag": "974541a3-b32f-46cc-94e4-3f7c519724d4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

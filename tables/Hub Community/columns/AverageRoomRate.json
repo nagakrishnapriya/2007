@@ -1,0 +1,19 @@
+{
+  "name": "AverageRoomRate",
+  "dataType": "decimal",
+  "sourceColumn": "AverageRoomRate",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "441506a9-865a-4426-863d-6b9216088d27",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

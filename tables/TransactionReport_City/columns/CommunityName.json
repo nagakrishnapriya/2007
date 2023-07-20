@@ -1,0 +1,13 @@
+{
+  "name": "CommunityName",
+  "dataType": "string",
+  "sourceColumn": "CommunityName",
+  "lineageTag": "bbe82547-d070-4630-898b-e5fcbae6a14f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

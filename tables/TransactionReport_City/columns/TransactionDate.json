@@ -1,0 +1,30 @@
+{
+  "name": "TransactionDate",
+  "dataType": "dateTime",
+  "sourceColumn": "TransactionDate",
+  "formatString": "Long Date",
+  "lineageTag": "b258c687-6201-46c3-b83a-000bd6ad92dc",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "673d9ef1-6127-4f5f-9130-26e257ecdda2",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "changedProperties": [
+    {
+      "property": "FormatString"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

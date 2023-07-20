@@ -1,0 +1,19 @@
+{
+  "name": "AverageOccupiedRoomRate",
+  "dataType": "decimal",
+  "sourceColumn": "AverageOccupiedRoomRate",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "766500ab-9907-4808-99b2-a9562f1479af",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

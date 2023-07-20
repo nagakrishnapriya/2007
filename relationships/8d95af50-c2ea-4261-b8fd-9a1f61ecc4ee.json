@@ -1,0 +1,13 @@
+{
+  "name": "8d95af50-c2ea-4261-b8fd-9a1f61ecc4ee",
+  "fromTable": "Hub CommunityPostalAddress",
+  "fromColumn": "PostalAddressId",
+  "toTable": "Hub PostalAddress",
+  "toColumn": "PostalAddressId",
+  "annotations": [
+    {
+      "name": "PBI_IsFromSource",
+      "value": "FS"
+    }
+  ]
+}

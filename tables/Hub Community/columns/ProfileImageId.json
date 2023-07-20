@@ -1,0 +1,15 @@
+{
+  "name": "ProfileImageId",
+  "dataType": "int64",
+  "sourceColumn": "ProfileImageId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "cd906593-d809-4a3e-9423-335e1c4911c3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

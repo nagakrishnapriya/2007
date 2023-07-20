@@ -1,0 +1,19 @@
+{
+  "name": "MaximumOccupiedRoomRate",
+  "dataType": "decimal",
+  "sourceColumn": "MaximumOccupiedRoomRate",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "e3747d61-58ff-4981-a43d-392dadcd0f4c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

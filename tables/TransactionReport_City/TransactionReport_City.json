@@ -1,0 +1,19 @@
+{
+  "name": "TransactionReport_City",
+  "lineageTag": "6c089854-26f6-4214-a463-18fc56e7d1e1",
+  "changedProperties": [
+    {
+      "property": "Name"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

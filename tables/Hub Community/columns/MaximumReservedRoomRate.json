@@ -1,0 +1,19 @@
+{
+  "name": "MaximumReservedRoomRate",
+  "dataType": "decimal",
+  "sourceColumn": "MaximumReservedRoomRate",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "48c9954b-c0a9-4e71-8c5f-e42f5eeef9d8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

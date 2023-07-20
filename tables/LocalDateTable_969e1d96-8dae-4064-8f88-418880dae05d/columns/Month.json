@@ -1,0 +1,22 @@
+{
+  "type": "calculated",
+  "name": "Month",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": "FORMAT([Date], \"MMMM\")",
+  "sortByColumn": "MonthNo",
+  "lineageTag": "fc5a0e64-dfa3-4dda-81bb-74469bc7fa2f",
+  "dataCategory": "Months",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "TemplateId",
+      "value": "Month"
+    }
+  ]
+}

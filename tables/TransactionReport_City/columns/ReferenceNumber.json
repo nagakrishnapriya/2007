@@ -1,0 +1,13 @@
+{
+  "name": "ReferenceNumber",
+  "dataType": "string",
+  "sourceColumn": "ReferenceNumber",
+  "lineageTag": "7d78d833-0fe0-49d2-9459-9e94ab9b37a2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

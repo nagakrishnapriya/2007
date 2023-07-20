@@ -1,0 +1,16 @@
+{
+  "name": "IsFeatured",
+  "dataType": "boolean",
+  "isNullable": false,
+  "sourceColumn": "IsFeatured",
+  "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+  "sourceProviderType": "bit",
+  "lineageTag": "ded316f6-ec87-4fe1-9c15-550430f109f8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "MarketingEndDate",
+  "dataType": "dateTime",
+  "sourceColumn": "MarketingEndDate",
+  "formatString": "Long Date",
+  "sourceProviderType": "date",
+  "lineageTag": "11ea43be-4134-46fb-9cef-757b9da16ee6",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

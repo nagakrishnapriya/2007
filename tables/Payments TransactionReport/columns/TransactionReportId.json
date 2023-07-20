@@ -1,0 +1,16 @@
+{
+  "name": "TransactionReportId",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "TransactionReportId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "15f57cef-129e-4688-92fe-c8c0c11994f3",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

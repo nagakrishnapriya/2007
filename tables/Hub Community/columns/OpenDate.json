@@ -1,0 +1,19 @@
+{
+  "name": "OpenDate",
+  "dataType": "dateTime",
+  "sourceColumn": "OpenDate",
+  "formatString": "Long Date",
+  "sourceProviderType": "date",
+  "lineageTag": "609d41f8-c4bd-4df4-b4cb-9d044bc7c4fb",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

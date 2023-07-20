@@ -1,0 +1,16 @@
+{
+  "name": "IsListingAddress",
+  "dataType": "boolean",
+  "isNullable": false,
+  "sourceColumn": "IsListingAddress",
+  "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+  "sourceProviderType": "bit",
+  "lineageTag": "c1af7ee5-6019-4cfc-b240-8b32546df2b4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

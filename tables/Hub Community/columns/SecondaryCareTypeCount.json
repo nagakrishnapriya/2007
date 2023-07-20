@@ -1,0 +1,15 @@
+{
+  "name": "SecondaryCareTypeCount",
+  "dataType": "int64",
+  "sourceColumn": "SecondaryCareTypeCount",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "ca4ba00d-8791-49bb-8d4e-ebdb125a6bd8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

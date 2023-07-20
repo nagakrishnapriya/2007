@@ -1,0 +1,15 @@
+{
+  "name": "CommunityOwnerId",
+  "dataType": "int64",
+  "sourceColumn": "CommunityOwnerId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "a820d3ac-485b-4356-8435-444d9df1ac17",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

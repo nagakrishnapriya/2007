@@ -1,0 +1,14 @@
+{
+  "name": "Hub.CommunityPostalAddress.Hub.PostalAddress.Longitude",
+  "dataType": "string",
+  "sourceColumn": "Hub.CommunityPostalAddress.Hub.PostalAddress.Longitude",
+  "sourceProviderType": "varchar(15)",
+  "lineageTag": "bc31499e-59ce-4441-a3b8-c10fc8d1ca4f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

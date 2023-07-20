@@ -1,0 +1,13 @@
+{
+  "name": "TransactionStatus",
+  "dataType": "string",
+  "sourceColumn": "TransactionStatus",
+  "lineageTag": "f8cedfdd-1148-4461-a805-8f875daf06aa",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

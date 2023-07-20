@@ -1,0 +1,14 @@
+{
+  "name": "Longitude",
+  "dataType": "string",
+  "sourceColumn": "Longitude",
+  "sourceProviderType": "varchar(15)",
+  "lineageTag": "5a74a9a3-ef10-40e1-b7c3-0f7409eb30c0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

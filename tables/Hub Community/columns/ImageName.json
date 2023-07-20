@@ -1,0 +1,14 @@
+{
+  "name": "ImageName",
+  "dataType": "string",
+  "sourceColumn": "ImageName",
+  "sourceProviderType": "nvarchar(500)",
+  "lineageTag": "0900ebb3-feea-44b1-a31a-73fba7e36ec4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

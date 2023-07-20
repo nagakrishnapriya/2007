@@ -1,0 +1,14 @@
+{
+  "name": "ExternalId",
+  "dataType": "string",
+  "sourceColumn": "ExternalId",
+  "sourceProviderType": "nvarchar(100)",
+  "lineageTag": "a9d9cc48-4f22-465e-9920-31f1c9265c29",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

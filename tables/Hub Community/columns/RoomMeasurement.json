@@ -1,0 +1,15 @@
+{
+  "name": "RoomMeasurement",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "RoomMeasurement",
+  "sourceProviderType": "nvarchar(100)",
+  "lineageTag": "d5992703-9ca1-451b-a4f5-c642babaa07e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

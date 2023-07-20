@@ -1,0 +1,14 @@
+{
+  "name": "StreetAddress1",
+  "dataType": "string",
+  "sourceColumn": "StreetAddress1",
+  "sourceProviderType": "varchar(100)",
+  "lineageTag": "6c92c349-6eb6-4e1a-a684-51b0e266ee77",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

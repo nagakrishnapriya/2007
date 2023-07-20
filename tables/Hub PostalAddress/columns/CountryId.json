@@ -1,0 +1,15 @@
+{
+  "name": "CountryId",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "CountryId",
+  "sourceProviderType": "char",
+  "lineageTag": "d049a06d-bb57-458a-bcec-bb4ee962bdfd",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

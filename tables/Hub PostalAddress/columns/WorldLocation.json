@@ -1,0 +1,14 @@
+{
+  "name": "WorldLocation",
+  "dataType": "string",
+  "sourceColumn": "WorldLocation",
+  "sourceProviderType": "nvarchar(max)",
+  "lineageTag": "d02f654a-eb49-47fe-b508-145cd24a5c98",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

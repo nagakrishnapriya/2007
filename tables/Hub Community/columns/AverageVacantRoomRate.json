@@ -1,0 +1,19 @@
+{
+  "name": "AverageVacantRoomRate",
+  "dataType": "decimal",
+  "sourceColumn": "AverageVacantRoomRate",
+  "formatString": "\"₹\"\\ #,0.###############;#,0.###############\\ -\"₹\";\"₹\"\\ #,0.###############",
+  "sourceProviderType": "smallmoney",
+  "lineageTag": "c625f74c-7d08-4f96-b0a1-ffc4988c91de",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-IN\"}"
+    }
+  ]
+}

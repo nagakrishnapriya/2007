@@ -1,0 +1,14 @@
+{
+  "name": "TimeZone",
+  "dataType": "string",
+  "sourceColumn": "TimeZone",
+  "sourceProviderType": "varchar(200)",
+  "lineageTag": "4d7664d9-c7f0-44b6-9ae5-5dadee7cc1f1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

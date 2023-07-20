@@ -1,0 +1,15 @@
+{
+  "name": "CommunityAssociationId",
+  "dataType": "int64",
+  "sourceColumn": "CommunityAssociationId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "938f3a0a-bc1d-4aec-bb77-9ca52341f7b7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

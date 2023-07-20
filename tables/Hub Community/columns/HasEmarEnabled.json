@@ -1,0 +1,16 @@
+{
+  "name": "HasEmarEnabled",
+  "dataType": "boolean",
+  "isNullable": false,
+  "sourceColumn": "HasEmarEnabled",
+  "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+  "sourceProviderType": "bit",
+  "lineageTag": "e35e4649-da3c-4f65-a46b-e24d50410b92",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

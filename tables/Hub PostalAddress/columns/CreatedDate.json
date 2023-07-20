@@ -1,0 +1,16 @@
+{
+  "name": "CreatedDate",
+  "dataType": "dateTime",
+  "isNullable": false,
+  "sourceColumn": "CreatedDate",
+  "formatString": "General Date",
+  "sourceProviderType": "datetime2",
+  "lineageTag": "67077705-df25-4dae-b1ae-599f845ecafe",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ResidentName",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "ResidentName",
+  "sourceProviderType": "nvarchar(200)",
+  "lineageTag": "8372d930-270c-46b0-853f-3677ea3628f9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

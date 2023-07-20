@@ -1,0 +1,16 @@
+{
+  "name": "RowStatusId",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "RowStatusId",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "c10eb103-17dd-4869-9aae-2645427f4ff9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

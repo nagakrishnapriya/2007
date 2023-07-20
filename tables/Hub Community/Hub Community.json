@@ -1,0 +1,14 @@
+{
+  "name": "Hub Community",
+  "lineageTag": "25289471-b240-47e4-b2c1-8a83358539a2",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

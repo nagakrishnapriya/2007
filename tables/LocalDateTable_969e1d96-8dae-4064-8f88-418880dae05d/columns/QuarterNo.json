@@ -1,0 +1,21 @@
+{
+  "type": "calculated",
+  "name": "QuarterNo",
+  "dataType": "int64",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": "INT(([MonthNo] + 2) / 3)",
+  "lineageTag": "beca0937-1b79-4d8f-a37c-88c273f0e143",
+  "dataCategory": "QuarterOfYear",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "TemplateId",
+      "value": "QuarterNumber"
+    }
+  ]
+}

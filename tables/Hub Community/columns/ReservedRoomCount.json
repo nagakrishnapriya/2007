@@ -1,0 +1,15 @@
+{
+  "name": "ReservedRoomCount",
+  "dataType": "int64",
+  "sourceColumn": "ReservedRoomCount",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "0fa5d40c-484b-452d-b057-0103805e65a5",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

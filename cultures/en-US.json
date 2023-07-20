@@ -1,0 +1,202 @@
+{
+  "name": "en-US",
+  "linguisticMetadata": {
+    "content": {
+      "Version": "2.0.0",
+      "Language": "en-US",
+      "DynamicImprovement": "HighConfidence",
+      "Entities": {
+        "payments_transactionreport.residentname": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Payments TransactionReport",
+              "ConceptualProperty": "ResidentName"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Name": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "payments_transactionreport.communityname": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Payments TransactionReport",
+              "ConceptualProperty": "CommunityName"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Community Name": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "payments_transactionreport.transactionid": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Payments TransactionReport",
+              "ConceptualProperty": "TransactionId"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Transaction Id": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "payments_transactionreport.transactionamount": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Payments TransactionReport",
+              "ConceptualProperty": "TransactionAmount"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Transaction Amount": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "payments_transactionreport.transactionstatus": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Payments TransactionReport",
+              "ConceptualProperty": "TransactionStatus"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Transaction Status": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "payments_transactionreport.referencenumber": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Payments TransactionReport",
+              "ConceptualProperty": "ReferenceNumber"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Reference Number": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "transactionreport_city.hub_community_hub_communitypostaladdress_hub_postaladdress_city": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "TransactionReport_City",
+              "ConceptualProperty": "Hub Community.Hub.CommunityPostalAddress.Hub.PostalAddress.City"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "City": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "transactionreport_city.communityname": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "TransactionReport_City",
+              "ConceptualProperty": "CommunityName"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Community Name": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        },
+        "transactionreport_city.transactionid": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "TransactionReport_City",
+              "ConceptualProperty": "TransactionId"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "Transaction Id": {
+                "State": "Suggested",
+                "Source": {
+                  "Type": "External",
+                  "Agent": "PowerBI.VisualColumnRename"
+                },
+                "Weight": 0.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "contentType": "json"
+  }
+}

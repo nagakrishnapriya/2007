@@ -1,0 +1,13 @@
+{
+  "name": "Email",
+  "dataType": "string",
+  "sourceColumn": "Email",
+  "lineageTag": "3674de2d-f97b-4d88-9eb4-350dbf0a07cf",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

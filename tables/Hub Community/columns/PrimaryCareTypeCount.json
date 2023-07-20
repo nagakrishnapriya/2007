@@ -1,0 +1,15 @@
+{
+  "name": "PrimaryCareTypeCount",
+  "dataType": "int64",
+  "sourceColumn": "PrimaryCareTypeCount",
+  "formatString": "0",
+  "sourceProviderType": "int",
+  "lineageTag": "64e32f25-95d8-4a5e-8c8f-2afd8fa5b21a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

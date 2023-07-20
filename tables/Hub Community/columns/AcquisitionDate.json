@@ -1,0 +1,19 @@
+{
+  "name": "AcquisitionDate",
+  "dataType": "dateTime",
+  "sourceColumn": "AcquisitionDate",
+  "formatString": "Long Date",
+  "sourceProviderType": "date",
+  "lineageTag": "4a7156d2-3b2e-4f4c-8117-e2c308a9e147",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

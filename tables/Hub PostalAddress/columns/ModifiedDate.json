@@ -1,0 +1,15 @@
+{
+  "name": "ModifiedDate",
+  "dataType": "dateTime",
+  "sourceColumn": "ModifiedDate",
+  "formatString": "General Date",
+  "sourceProviderType": "datetime2",
+  "lineageTag": "6e8a5cee-9341-42e7-80f8-5e8bf36d9df9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

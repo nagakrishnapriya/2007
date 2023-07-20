@@ -1,0 +1,8 @@
+{
+  "name": "673d9ef1-6127-4f5f-9130-26e257ecdda2",
+  "fromTable": "TransactionReport_City",
+  "fromColumn": "TransactionDate",
+  "toTable": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

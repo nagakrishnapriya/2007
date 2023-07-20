@@ -1,0 +1,8 @@
+{
+  "name": "LocalDateTable_969e1d96-8dae-4064-8f88-418880dae05d-ed7181b3-094e-4a8a-a8e0-260ea0b65c94",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": "Calendar(Date(Year(MIN('TransactionReport_City'[TransactionDate])), 1, 1), Date(Year(MAX('TransactionReport_City'[TransactionDate])), 12, 31))"
+  }
+}

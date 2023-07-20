@@ -1,0 +1,15 @@
+{
+  "name": "TransactionId",
+  "dataType": "string",
+  "isNullable": false,
+  "sourceColumn": "TransactionId",
+  "sourceProviderType": "nvarchar(100)",
+  "lineageTag": "4aaef9f7-5265-4881-b46e-f8f239b266b8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}
